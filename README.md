@@ -16,6 +16,7 @@ But Atlance doesn’t just create memories for you — it keeps your friends and
 The **Atlance workflow** is handled by a chain of specialized agents. Here’s how your photos become a curated story:
 
 1. **Duplicate Remover Agent (`duplicate_remover_agent`)**
+<<<<<<< HEAD
    - Removes duplicate photos as people often take multiple shots of the same scene
    - Output: a clean set of unique images
 
@@ -34,6 +35,25 @@ The **Atlance workflow** is handled by a chain of specialized agents. Here’s h
    - Produces a **final story_description** and a **Google Maps pin**
 
 4. **Story Teller Agent (`story_teller_agent`)**
+=======
+
+   - Removes duplicate photos as people often take multiple shots of the same scene
+   - Output: a clean set of unique images
+
+2. **Data Extractor Agent (`data_extractor_agent`)**
+
+   - Analyzes each image to extract:
+     - Metadata: location, time
+     - Recognizable subjects (e.g., Eiffel Tower, a park, etc.)
+     - Uses Google tools for additional context:
+     - Google Maps for landmark locations
+     - Google Search for historic facts or local insights
+   - Produces a **preliminary story_description**
+
+3. **Story Teller Agent (`story_teller_agent`)**
+   - Asks 1–3 questions to clarify and enrich the story
+     - Example: “I see you are in a park. Assuming this is Central Park, are you here for a special occasion like a birthday? If not, which park is it?”
+>>>>>>> 14a530f (Readme change and story model)
    - Crafts the **final travel blog**:
      - Displays text behind the location and images
      - Captures the tone, emotional highlights, and context of the trip

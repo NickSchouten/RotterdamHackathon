@@ -1,0 +1,204 @@
+[
+  {
+    "story_id": "story_001_paris_weekend",
+    "user_id": "user_123",
+    "status": "completed",
+    "created_at": "2024-10-25T14:30:00Z",
+    "duplicate_remover_agent": {
+      "original_count": 47,
+      "unique_count": 12,
+      "unique_images": [
+        "/photos/eiffel_tower_sunset.jpg",
+        "/photos/louvre_entrance.jpg",
+        "/photos/cafe_montmartre.jpg",
+        "/photos/seine_river_walk.jpg"
+      ]
+    },
+    "data_extractor_agent": {
+      "images": [
+        {
+          "path": "/photos/eiffel_tower_sunset.jpg",
+          "timestamp": "2024-10-20T18:45:00Z",
+          "location": { "lat": 48.8584, "lng": 2.2945 },
+          "subjects": ["Eiffel Tower", "sunset", "people"]
+        },
+        {
+          "path": "/photos/louvre_entrance.jpg",
+          "timestamp": "2024-10-21T10:15:00Z",
+          "location": { "lat": 48.8606, "lng": 2.3376 },
+          "subjects": ["Louvre Museum", "glass pyramid", "tourists"]
+        }
+      ],
+      "google_data": {
+        "place": "Eiffel Tower, Paris",
+        "facts": [
+          "Built in 1889",
+          "324 meters tall",
+          "Most visited paid monument"
+        ],
+        "maps_pin": { "lat": 48.8584, "lng": 2.2945 }
+      },
+      "preliminary_story": "A romantic weekend in Paris visiting iconic landmarks including the Eiffel Tower at sunset and exploring world-class museums."
+    },
+    "story_teller_agent": {
+      "questions": [
+        {
+          "question": "I see you visited the Eiffel Tower at sunset. Was this for a special occasion?",
+          "answer": "Yes, it was our 5th anniversary celebration!"
+        },
+        {
+          "question": "What was your favorite artwork at the Louvre?",
+          "answer": "The Mona Lisa was incredible, but I loved the Egyptian artifacts even more."
+        }
+      ],
+      "title": "Five Years, Five Perfect Days in Paris",
+      "content": "# Five Years, Five Perfect Days in Paris\n\nParis welcomed us with golden hour magic as we stood beneath the Eiffel Tower, celebrating five years of adventures together. The iron lady stood tall against the amber sky, just like our love has stood strong through every season...\n\nThe next morning found us at the Louvre, where ancient Egyptian mysteries captivated us more than any famous smile. Sometimes the greatest treasures are the ones you don't expect to find.",
+      "word_count": 156,
+      "tone": "romantic",
+      "images": [
+        {
+          "path": "/photos/eiffel_tower_sunset.jpg",
+          "caption": "Our anniversary moment beneath the Eiffel Tower"
+        },
+        {
+          "path": "/photos/louvre_entrance.jpg",
+          "caption": "Ready to explore thousands of years of history"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "story_002_tokyo_adventure",
+    "user_id": "user_456",
+    "status": "completed",
+    "created_at": "2024-10-26T09:15:00Z",
+    "duplicate_remover_agent": {
+      "original_count": 89,
+      "unique_count": 23,
+      "unique_images": [
+        "/photos/shibuya_crossing.jpg",
+        "/photos/sushi_restaurant.jpg",
+        "/photos/temple_garden.jpg",
+        "/photos/robot_cafe.jpg"
+      ]
+    },
+    "data_extractor_agent": {
+      "images": [
+        {
+          "path": "/photos/shibuya_crossing.jpg",
+          "timestamp": "2024-10-22T19:30:00Z",
+          "location": { "lat": 35.6598, "lng": 139.7006 },
+          "subjects": ["Shibuya Crossing", "neon signs", "crowd"]
+        },
+        {
+          "path": "/photos/sushi_restaurant.jpg",
+          "timestamp": "2024-10-23T12:00:00Z",
+          "location": { "lat": 35.6762, "lng": 139.7653 },
+          "subjects": ["sushi", "chef", "counter seating"]
+        }
+      ],
+      "google_data": {
+        "place": "Shibuya Crossing, Tokyo",
+        "facts": [
+          "Busiest pedestrian crossing in the world",
+          "Up to 3,000 people cross at once"
+        ],
+        "maps_pin": { "lat": 35.6598, "lng": 139.7006 }
+      },
+      "preliminary_story": "An energetic solo adventure through Tokyo's modern culture and traditional experiences."
+    },
+    "story_teller_agent": {
+      "questions": [
+        {
+          "question": "I see you're at Shibuya Crossing at night. How did the energy feel?",
+          "answer": "Absolutely electric! The lights and energy were overwhelming in the best way."
+        },
+        {
+          "question": "What type of sushi did you try at this restaurant?",
+          "answer": "It was an omakase experience - the chef chose everything. Best meal of my life!"
+        }
+      ],
+      "title": "Lost and Found in Tokyo's Electric Dreamscape",
+      "content": "# Lost and Found in Tokyo's Electric Dreamscape\n\nStanding in the heart of Shibuya Crossing at night feels like being inside a neon kaleidoscope. Three thousand strangers become part of your story for thirty seconds, then scatter like stardust into the Tokyo night...\n\nThe next day, I found intimacy in an 8-seat sushi counter where the chef's hands moved like poetry. Each piece was a haiku of flavor, telling stories of the sea I'd never heard before.",
+      "word_count": 142,
+      "tone": "adventurous",
+      "images": [
+        {
+          "path": "/photos/shibuya_crossing.jpg",
+          "caption": "Swimming in a sea of neon and humanity"
+        },
+        {
+          "path": "/photos/sushi_restaurant.jpg",
+          "caption": "Where every bite tells a story"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "story_003_iceland_expedition",
+    "user_id": "user_789",
+    "status": "completed",
+    "created_at": "2024-10-27T16:45:00Z",
+    "duplicate_remover_agent": {
+      "original_count": 156,
+      "unique_count": 34,
+      "unique_images": [
+        "/photos/northern_lights.jpg",
+        "/photos/blue_lagoon.jpg",
+        "/photos/waterfall_hike.jpg",
+        "/photos/glacier_cave.jpg"
+      ]
+    },
+    "data_extractor_agent": {
+      "images": [
+        {
+          "path": "/photos/northern_lights.jpg",
+          "timestamp": "2024-10-15T23:45:00Z",
+          "location": { "lat": 64.1466, "lng": -21.9426 },
+          "subjects": ["aurora borealis", "starry sky", "mountains"]
+        },
+        {
+          "path": "/photos/glacier_cave.jpg",
+          "timestamp": "2024-10-16T14:20:00Z",
+          "location": { "lat": 64.0685, "lng": -16.2078 },
+          "subjects": ["ice cave", "blue ice", "person silhouette"]
+        }
+      ],
+      "google_data": {
+        "place": "Vatnajökull National Park, Iceland",
+        "facts": [
+          "Largest national park in Europe",
+          "Contains Europe's largest glacier"
+        ],
+        "maps_pin": { "lat": 64.0685, "lng": -16.2078 }
+      },
+      "preliminary_story": "An epic nature expedition through Iceland's otherworldly landscapes and natural phenomena."
+    },
+    "story_teller_agent": {
+      "questions": [
+        {
+          "question": "How long did you wait to see the Northern Lights?",
+          "answer": "Three nights of cloudy skies, but on the fourth night they danced for hours!"
+        },
+        {
+          "question": "How did it feel inside the glacier cave?",
+          "answer": "Like being inside a frozen cathedral. The silence was profound."
+        }
+      ],
+      "title": "Chasing Light at the Edge of the World",
+      "content": "# Chasing Light at the Edge of the World\n\nThree nights of cloudy disappointment taught me that nature operates on her own schedule. But on the fourth night, the aurora borealis painted the sky in green poetry, dancing for hours as if apologizing for keeping me waiting...\n\nInside the glacier cave, I discovered what silence truly means. Surrounded by ice older than civilization, I found a cathedral carved by time itself, where every breath felt sacred.",
+      "word_count": 167,
+      "tone": "reflective",
+      "images": [
+        {
+          "path": "/photos/northern_lights.jpg",
+          "caption": "Nature's apology dance across the Arctic sky"
+        },
+        {
+          "path": "/photos/glacier_cave.jpg",
+          "caption": "Inside Earth's frozen cathedral"
+        }
+      ]
+    }
+  }
+]
