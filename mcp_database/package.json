@@ -1,0 +1,51 @@
+{
+  "name": "atlance-mcp-database",
+  "version": "1.0.0",
+  "description": "MCP server for Atlance travel stories database management",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "install:deps": "pnpm install"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "keywords": [
+    "mcp",
+    "database",
+    "travel",
+    "stories",
+    "postgresql",
+    "drizzle"
+  ],
+  "author": "Atlance Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "drizzle-orm": "^0.29.0",
+    "drizzle-kit": "^0.20.0",
+    "postgres": "^3.4.0",
+    "pg": "^8.11.0",
+    "dotenv": "^16.3.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/pg": "^8.10.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.6.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0"
+  }
+}
