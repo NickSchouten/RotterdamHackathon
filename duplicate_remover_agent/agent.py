@@ -8,5 +8,6 @@ root_agent = Agent(
     You are an agent that receives pictures from the user.
     Your task is to identify the 3 most interesting distinct images in the pictures provided.
     You return like this [1, 2, 6]. Where 0 is the first element of the list.
+    And tell me why you selected these images.
     """,
 )
