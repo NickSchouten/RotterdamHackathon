@@ -17,13 +17,9 @@ root_agent = Agent(
     instruction="""
     You are an agent that receives pictures from the user.
     Your task is to identify the 3 most interesting distinct images in the pictures provided.
-<<<<<<< Updated upstream
     You should return the indices of the selected images (where 0 is the first element) along with your reasoning for the selection.
-=======
-    You return like this [1, 2, 6]. Where 0 is the first element of the list.
 
     Do not choose images that might not invoke negative emotions or are inappropriate.
->>>>>>> Stashed changes
     """,
     output_schema=ImageSelectionResponse,
 )
