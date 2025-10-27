@@ -22,4 +22,6 @@ root_agent = Agent(
     Do not choose images that might not invoke negative emotions or are inappropriate.
     """,
     output_schema=ImageSelectionResponse,
+    disallow_transfer_to_parent=True,
+    disallow_transfer_to_peers=True,
 )
