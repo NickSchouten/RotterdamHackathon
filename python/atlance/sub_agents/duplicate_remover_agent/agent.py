@@ -10,9 +10,9 @@ class ImageSelectionResponse(BaseModel):
     reasons: str
 
 
-root_agent = Agent(
+duplicate_remover_agent = Agent(
     model="gemini-2.5-flash",
-    name="root_agent",
+    name="duplicate_remover_agent",
     description="A helpful assistant for user questions.",
     instruction="""
     You are an agent that receives pictures from the user.

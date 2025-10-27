@@ -22,7 +22,7 @@ install-precommit:
 # Run the ADK UI server
 [group('run')]
 agent-ui:
-    uv run adk web agents/
+    cd python && uv run --env-file=.env adk web agents/
 
 # Run linter
 [group('dev')]
