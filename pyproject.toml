@@ -16,9 +16,6 @@ dev = [
     "pre-commit",
 ]
 
-[tool.hatch.version]
-path = "src/atlance/__init__.py"
-
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
 exclude = [
