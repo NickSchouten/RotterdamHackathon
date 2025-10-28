@@ -15,6 +15,7 @@
 from google.adk.agents import SequentialAgent
 from .sub_agents.data_extractor_agent.agent import data_extractor_agent
 from .sub_agents.duplicate_remover_agent.agent import duplicate_remover_agent
+from .sub_agents.landmark_search_agent.agent import landmark_search_agent
 
 
 podcast_transcript_agent = SequentialAgent(
@@ -22,6 +23,7 @@ podcast_transcript_agent = SequentialAgent(
     description="Executes a sequence of podcast generation steps",
     sub_agents=[
         duplicate_remover_agent,
+        landmark_search_agent,
         data_extractor_agent,
     ],
 )

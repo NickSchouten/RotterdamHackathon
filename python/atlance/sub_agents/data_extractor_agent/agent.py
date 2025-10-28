@@ -2,7 +2,6 @@ from google.adk.agents.llm_agent import Agent
 from pydantic import BaseModel
 from typing import List, Optional
 
-
 class Location(BaseModel):
     """Geographic location with latitude and longitude."""
 
@@ -32,6 +31,8 @@ data_extractor_agent = Agent(
     description="An agent that extracts metadata and identifies subjects in travel photos.",
     instruction="""
     You are an agent that analyzes travel photos to extract meaningful data.
+    You will receive verified landmark information from the previous landmark search agent
+    which you should incorporate into your analysis.
 
     Your task is to:
     1. Extract metadata from each image:
@@ -52,11 +53,12 @@ data_extractor_agent = Agent(
        - Keep it concise and engaging
 
     Guidelines:
+    - Use the landmark information from the previous search agent to enhance your analysis
     - Be specific when identifying landmarks or locations
     - Include general subjects like "sunset", "food", "architecture" when appropriate
     - If location data is not available, set location to null
     - Use ISO 8601 format for timestamps (e.g., "2024-10-20T18:45:00Z")
-    - Make the preliminary story engaging but factual based on what you see
+    - Make the preliminary story engaging but factual, incorporating verified landmark details
     """,
     output_schema=DataExtractionResponse,
     disallow_transfer_to_parent=True,
