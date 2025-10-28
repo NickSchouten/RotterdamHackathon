@@ -16,10 +16,8 @@ duplicate_remover_agent = Agent(
     description="A helpful assistant for user questions.",
     instruction="""
     You are an agent that receives pictures from the user.
-    Your task is to identify the 3 most interesting distinct images in the pictures provided.
+    Your task is to identify the 3 most interesting distinct images in the pictures provided. Do not select photos that convey negative emotions or that are inappropriate (e.g., discriminatory, sexually suggestive, etc.).
     You should return the indices of the selected images (where 0 is the first element) along with your reasoning for the selection.
-
-    Do not choose images that might not invoke negative emotions or are inappropriate.
     """,
     output_schema=ImageSelectionResponse,
     disallow_transfer_to_parent=True,
