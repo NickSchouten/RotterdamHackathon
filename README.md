@@ -40,3 +40,11 @@ The **Atlance workflow** is handled by a chain of specialized agents. Here’s h
 ---
 
 With this agent-driven workflow, Atlance transforms your photos and brief inputs into **a complete, sharable travel story** in just a few steps.
+
+---
+
+## How to run the project
+
+```
+uv run adk web .
+```
