@@ -12,18 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from google.adk.agents import SequentialAgent
-from .sub_agents.data_extractor_agent.agent import data_extractor_agent
-from .sub_agents.duplicate_remover_agent.agent import duplicate_remover_agent
+from google.adk.agents import Agent
+from .sub_agents.data_extractor_agent.agent import data_extractor_agent as a2
+from .sub_agents.duplicate_remover_agent.agent import duplicate_remover_agent as a1
+from .sub_agents.question_asker.agent import question_asker as a3
+from google.adk.tools import agent_tool
 
 
-podcast_transcript_agent = SequentialAgent(
-    name="podcast_transcript_agent",
-    description="Executes a sequence of podcast generation steps",
-    sub_agents=[
-        duplicate_remover_agent,
-        data_extractor_agent,
+am = Agent(
+    model="gemini-2.5-flash",
+    name="root_agent",
+    description="You receive pictures. You may use tool agents to select a subsect, extract intesting info and then ask the user questions about the images. All this with the end goals of making a travel blog.",
+    tools=[
+        agent_tool.AgentTool(agent=a1),
+        agent_tool.AgentTool(agent=a2),
+        agent_tool.AgentTool(agent=a3),
     ],
 )
 
-root_agent = podcast_transcript_agent
+root_agent = am
