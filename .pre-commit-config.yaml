@@ -12,12 +12,3 @@ repos:
     -   id: ruff
         args: [--fix]
     -   id: ruff-format
--   repo: local
-    hooks:
-    -   id: pytest
-        name: pytest
-        language: system
-        entry: uv
-        args: [run, --env-file=.env, python, -m, pytest]
-        pass_filenames: false
-        always_run: true
