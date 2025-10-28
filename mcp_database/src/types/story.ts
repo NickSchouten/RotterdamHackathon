@@ -110,6 +110,8 @@ export interface ListStoriesParams {
   status?: "processing" | "completed" | "failed";
   limit?: number;
   offset?: number;
+  sort_by?: "created_at" | "updated_at" | "story_id";
+  sort_order?: "asc" | "desc";
 }
 
 export interface UpdateStoryParams {
@@ -136,6 +138,9 @@ export interface StoriesListResponse {
     total: number;
     page: number;
     limit: number;
+    total_pages: number;
+    has_next: boolean;
+    has_previous: boolean;
   };
   error?: string;
 }
